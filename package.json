@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
     "db:create": "wrangler d1 create vocabulary-db",
     "db:migrate": "wrangler d1 execute vocabulary-db --file=./schema.sql",
     "db:migrate:remote": "wrangler d1 execute vocabulary-db --file=./schema.sql --remote"
