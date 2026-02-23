@@ -1,0 +1,25 @@
+{
+  "name": "english-vocabulary-ucb-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for English vocabulary learning with UCB-based adaptive ranking, deployed on Cloudflare Workers",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:create": "wrangler d1 create vocabulary-db",
+    "db:migrate": "wrangler d1 execute vocabulary-db --file=./schema.sql",
+    "db:migrate:remote": "wrangler d1 execute vocabulary-db --file=./schema.sql --remote"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.25.0",
+    "agents": "^0.5.1",
+    "ai": "^6.0.97",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250214.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^3.101.0"
+  }
+}
