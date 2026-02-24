@@ -6,3 +6,4 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "vocabulary-db"
+database_id = "6859b759-08e2-4dd0-9269-dbc2aa997e17"
