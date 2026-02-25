@@ -1,0 +1,10 @@
+name = "mcp-rest-bridge"
+main = "src/index.ts"
+compatibility_date = "2025-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+MCP_URL = "https://english-vocabulary-ucb-mcp.<YOUR-SUBDOMAIN>.workers.dev/mcp"
+
+# To set the optional API key secret, run:
+#   npx wrangler secret put BRIDGE_API_KEY
